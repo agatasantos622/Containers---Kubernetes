@@ -1,7 +1,7 @@
 # 📦 Containers & Kubernetes
 
 > Projeto desenvolvido para demonstrar a criação de imagens Docker,
-> Publicação no Docker Hub e implantação de aplicações utilizando Kubernetes.
+> publicação no Docker Hub e implantação de aplicações utilizando Kubernetes.
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
@@ -13,11 +13,11 @@
 
 Assista à apresentação do projeto:
 
-➡️ https://www.linkedin.com/...
+➡️ > Em breve.
 
 ---
 
-# 📑 Índice
+## 📑 Índice
 
 - [📖 Sobre o projeto](#-sobre-o-projeto)
 - [🎯 Objetivo](#-objetivo)
@@ -29,10 +29,9 @@ Assista à apresentação do projeto:
 - [📚 Aprendizados](#-aprendizados)
 - [🚀 Melhorias futuras](#-melhorias-futuras)
 - [👩‍💻 Autora](#-autora)
-
 ---
 
-# 📖 Sobre o projeto
+## 📖 Sobre o projeto
 
 Este projeto foi desenvolvido para praticar conceitos fundamentais de conteinerização e orquestração de aplicações utilizando Docker e Kubernetes.
 
@@ -55,7 +54,7 @@ Durante o desenvolvimento foram utilizados conceitos como:
 
 ---
 
-# 🎯 Objetivo
+## 🎯 Objetivo
 
 O objetivo deste projeto é demonstrar o fluxo completo de implantação de aplicações conteinerizadas utilizando Kubernetes.
 
@@ -63,7 +62,7 @@ Além da implantação dos containers, o projeto apresenta uma estrutura organiz
 
 ---
 
-# 🛠 Tecnologias utilizadas
+## 🛠 Tecnologias utilizadas
 
 - Docker
 - Docker Hub
@@ -77,7 +76,7 @@ Além da implantação dos containers, o projeto apresenta uma estrutura organiz
 
 ---
 
-# 📂 Estrutura do projeto
+## 📂 Estrutura do projeto
 
 ```text
 containers-kubernetes/
@@ -107,7 +106,7 @@ containers-kubernetes/
 
 ---
 
-# ⚙ Arquitetura da aplicação
+## ⚙ Arquitetura da aplicação
 
 ```text
                  Docker Hub
@@ -136,10 +135,23 @@ containers-kubernetes/
                       │
         localhost:8081   localhost:8080
 ```
+---
+> **Observação**
+>
+> As imagens Docker utilizadas neste projeto foram publicadas no Docker Hub para que o Kubernetes pudesse realizar o download durante a criação dos Pods.
+
+## 📋 Pré-requisitos
+
+Antes de executar o projeto, é necessário possuir instalado:
+
+- Docker Desktop
+- Kubernetes habilitado no Docker Desktop
+- kubectl
+- Git
 
 ---
 
-# 🚀 Como executar
+## 🚀 Como executar
 
 ## 1. Clonar o repositório
 
@@ -161,10 +173,19 @@ kubectl apply -f k8s/
 
 ## 4. Verificar os Pods
 
-```bash
+```
+Verifique se todos os Pods estão em execução:
+
+bash
 kubectl get pods
 ```
 
+O resultado esperado é:
+
+```text
+STATUS: Running
+READY: 1/1
+```
 ## 5. Criar o acesso local
 
 ### Nginx
@@ -195,7 +216,7 @@ http://localhost:8081
 
 ---
 
-# 📸 Demonstração
+## 📸 Demonstração
 
 ## Docker Images
 
@@ -245,7 +266,7 @@ Página HTML hospedada pelo servidor Apache HTTP Server.
 
 ---
 
-# 📚 Aprendizados
+## 📚 Aprendizados
 
 Durante o desenvolvimento deste projeto foram praticados conceitos importantes relacionados à conteinerização e orquestração de aplicações.
 
@@ -264,7 +285,7 @@ Principais conhecimentos adquiridos:
 
 ---
 
-# 🚀 Melhorias futuras
+## 🚀 Melhorias futuras
 
 Como evolução deste projeto, podem ser implementadas as seguintes funcionalidades:
 
@@ -276,20 +297,11 @@ Como evolução deste projeto, podem ser implementadas as seguintes funcionalida
 - Implantação em um cluster Kubernetes na nuvem (AWS, Azure ou Google Cloud).
 
 ---
-
-# 👩‍💻 Autora
+##👩‍💻 Autora
 
 **Ágata Oliveira**
 
 Desenvolvido como projeto acadêmico para prática de Docker, Docker Hub e Kubernetes.
-
----
-
-# 📄 Licença
-
-Este projeto possui finalidade exclusivamente educacional.
-
-Sinta-se à vontade para utilizá-lo como referência para estudos.
 
 ---
 
